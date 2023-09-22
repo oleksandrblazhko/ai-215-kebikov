@@ -1,2 +1,2 @@
 ### Діаграма прецедентів програмного продукту
-![Use case diagram](UseCaseDiagram.png)
+![Use case diagram](UseCaseDiagram2.png)
