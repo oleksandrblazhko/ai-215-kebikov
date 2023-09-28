@@ -1,2 +1,2 @@
 ### Опис вимог до OUTPUT-потоків інтерфейсу користувача
-![Wireframe design](WireframeDesign.jpg)
+![Wireframe design](WireFrameDesign.jpg)
