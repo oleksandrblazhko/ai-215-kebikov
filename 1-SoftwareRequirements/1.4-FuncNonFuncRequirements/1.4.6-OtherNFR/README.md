@@ -3,6 +3,7 @@
 |:-----:|:-----:|:-----|:-----|
 |FR1.1|NFR1.3|Time Performance|Не більше 10 секунд|
 |FR1.1|NFR1.3|Network|Наявність WI-FI|
+|FR1.1|NFR1.3|Hardware|Кондеціонер AirDance 3200|
 |FR1.2|NFR1.4|Time Performance|Налаштування пристрою займають менше 30 секунд|
 |FR1.2|NFR1.4|Network|Наявність WI-FI|
 |FR1.2|NFR1.4|Human Factors Requirements|Дія з боку користувача, тому час може різнитися|
