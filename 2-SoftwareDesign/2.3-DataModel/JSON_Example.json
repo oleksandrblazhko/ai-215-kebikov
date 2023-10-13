@@ -1,0 +1,41 @@
+{
+    "User Information": {
+        "1": {
+            "Profile Photo": "url до фото користувача UndetectedMax",
+            "Email": "email_adress@gmail.com",
+            "Nickname": "UndetectedMax"
+        }
+    },
+    "User": {
+        "1": {
+            "Login": "UndetectedMax",
+            "Password": "12345678"
+        }
+    },
+    "Choreographer": {
+        "1": {
+            "Specialization": "Майстер сучасних танців",
+            "Experience": "Досвід хореографа більше 5 років"
+        }
+    },
+    "Create Post": {
+        "1": {
+            "Text": "Досвід створення посту користувачем",
+            "File": "url до відео чи фото"
+        }
+    },
+    "Comment": {
+        "1": {
+            "Response": "Текст коментаря користувача",
+            "Date": "04.10.2023"
+        }
+    },
+    "Temperature Control": {
+        "1": {
+            "Air Purifier": true,
+            "Mode": "холод",
+            "Temperature": 25,
+            "Automatic Setting": false
+        }
+    }
+}

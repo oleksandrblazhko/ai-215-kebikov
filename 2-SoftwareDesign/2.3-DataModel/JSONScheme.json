@@ -1,0 +1,119 @@
+{
+    "User Information": {
+        "description": "User Information details",
+        "type": "object",
+        "properties": {
+            "Profile Photo": {
+                "description": "Text link to user's profile photo",
+                "type": "string",
+                "constraints": "Image size in expanded view < 5 MB"
+            },
+            "Email": {
+                "description": "User's email address",
+                "type": "string",
+                "constraints": "Individual value"
+            },
+            "Nickname": {
+                "description": "User's self-chosen nickname",
+                "type": "string",
+                "constraints": "Value length > 2"
+            }
+        },
+        "required": ["Profile Photo", "Email", "Nickname"]
+    },
+    "User": {
+        "description": "User details",
+        "type": "object",
+        "properties": {
+            "Login": {
+                "description": "User's login",
+                "type": "string",
+                "constraints": "Length < 20 characters"
+            },
+            "Password": {
+                "description": "User's password",
+                "type": "string",
+                "constraints": "Length < 20 characters"
+            }
+        },
+        "required": ["Login", "Password"]
+    },
+    "Choreographer": {
+        "description": "Choreographer details",
+        "type": "object",
+        "properties": {
+            "Specialization": {
+                "description": "Choreographer's specialization",
+                "type": "string",
+                "constraints": "Individual value"
+            },
+            "Experience": {
+                "description": "Choreographer's experience",
+                "type": "string",
+                "constraints": "Value length > 5 characters"
+            }
+        },
+        "required": ["Specialization", "Experience"]
+    },
+    "Create Post": {
+        "description": "User's post creation details",
+        "type": "object",
+        "properties": {
+            "Text": {
+                "description": "User's text about their experience",
+                "type": "string",
+                "constraints": "0 < Length < 500 characters"
+            },
+            "File": {
+                "description": "Video or photos uploaded by the user",
+                "type": "string",
+                "constraints": "File size < 100 MB"
+            }
+        },
+        "required": ["Text", "File"]
+    },
+    "Comment": {
+        "description": "Comment details",
+        "type": "object",
+        "properties": {
+            "Response": {
+                "description": "User's response to a request",
+                "type": "string",
+                "constraints": "0 < Length < 300 characters"
+            },
+            "Date": {
+                "description": "Date of the response",
+                "type": "string",
+                "constraints": "Value >= current date"
+            }
+        },
+        "required": ["Response", "Date"]
+    },
+    "Temperature Control": {
+        "description": "Temperature control details",
+        "type": "object",
+        "properties": {
+            "Air Purifier": {
+                "description": "Option to enable or disable air purification",
+                "type": "boolean",
+                "constraints": "On or Off"
+            },
+            "Mode": {
+                "description": "User's selection of mode (cool, heat, fan, etc.)",
+                "type": "string",
+                "constraints": "Options < 5"
+            },
+            "Temperature": {
+                "description": "Temperature at which the air conditioner operates",
+                "type": "number",
+                "constraints": "Value between 15 - 30"
+            },
+            "Automatic Setting": {
+                "description": "Function for automatic device settings",
+                "type": "boolean",
+                "constraints": "User input ignored"
+            }
+        },
+        "required": ["Air Purifier", "Mode", "Temperature", "Automatic Setting"]
+    }
+}
