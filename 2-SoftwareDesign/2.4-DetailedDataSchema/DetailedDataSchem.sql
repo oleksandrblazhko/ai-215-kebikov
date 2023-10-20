@@ -8,10 +8,11 @@ CREATE TABLE UserInformation (
 -- User table
 CREATE TABLE Users (
     UserID INT PRIMARY KEY,
-    Login VARCHAR(20) CHECK (LENGTH(Login) < 20),
-    Password VARCHAR(20) CHECK (LENGTH(Password) < 20),
+    Login VARCHAR(20) CHECK (Login ~ '^[a-zA-Z0-9_-]{5,20}$'),
+    Password VARCHAR(20) CHECK (Password ~ '^[a-zA-Z0-9_-]{5,20}$'),
     UserInformationID INT REFERENCES UserInformation
 );
+
 
 -- Choreographer table
 CREATE TABLE Choreographer (
