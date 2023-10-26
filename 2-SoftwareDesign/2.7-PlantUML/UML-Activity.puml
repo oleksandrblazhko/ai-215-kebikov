@@ -15,16 +15,13 @@ if (Is Username and Password Valid?) then (yes)
   else (no)
     :Account creation failed;
     :Display an error message to the user;
-    stop
   endif
 else (no)
   :Username and password do not meet the requirements;
   :Display an error message to the user;
-  stop
 endif
 
 :Finish the account creation process;
-
 stop
 
 @enduml
