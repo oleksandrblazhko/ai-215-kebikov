@@ -1,0 +1,58 @@
+@startuml
+
+title Class Diagram
+
+class "UserInformation" {
+  +Profile Photo: string
+  +Email: string
+  +Nickname: string
+  +setProfilePhoto(photo: string): void
+  +setEmail(email: string): void
+  +setNickname(nickname: string): void
+}
+
+class "User" {
+  -Login: string
+  -Password: string
+  +login(username: string, password: string): boolean
+  +createAccount(username: string, password: string): boolean
+}
+
+class "Choreographer" {
+  -Specialization: string
+  -Experience: string
+  +getSpecialization(): string
+  +getExperience(): string
+}
+
+class "CreatePost" {
+  -Text: string
+  -File: string
+  +createTextPost(text: string): void
+  +uploadMedia(file: string): void
+}
+
+class "Comment" {
+  -Response: string
+  -Date: string
+  +writeComment(commentText: string): void
+  +getDate(): string
+}
+
+class "TemperatureControl" {
+  -Air Purifier: boolean
+  -Mode: string
+  -Temperature: int
+  -Automatic Setting: boolean
+  +setAirPurifier(activate: boolean): void
+  +setMode(mode: string): void
+  +setTemperature(temp: int): void
+  +enableAutomaticSetting(enable: boolean): void
+}
+
+"User" -- "UserInformation" : owns
+"User" -- "CreatePost" : creates
+"User" -- "Comment" : comments
+"User" -- "TemperatureControl" : controls
+
+@enduml
