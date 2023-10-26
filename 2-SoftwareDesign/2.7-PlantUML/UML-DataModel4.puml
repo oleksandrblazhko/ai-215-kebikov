@@ -1,8 +1,8 @@
 @startjson
 
-title JSON Data {
+title JSON Data Model
 {
-    "User Information": {
+ "User Information": {
         "1": {
             "Profile Photo": "url до фото користувача",
             "Email": "email_adress@gmail.com",
@@ -42,5 +42,5 @@ title JSON Data {
         }
     }
 }
-}
+
 @endjson
