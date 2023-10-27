@@ -1,0 +1,22 @@
+@startuml
+
+title Use Case Diagram
+
+actor Користувач as user
+actor Хореограф as choreographer
+
+rectangle System {
+  usecase "Контроль температури" as control_temperature
+  usecase "Обмін фідбеком" as feedback
+  usecase "Зменшення впливу на довкілля" as reduce_environment_impact
+  usecase "Управління якістю повітря" as air_quality_management
+
+  user -- control_temperature
+  user -- feedback
+  user -- reduce_environment_impact
+  user -- air_quality_management
+
+  choreographer -- feedback
+}
+
+@enduml

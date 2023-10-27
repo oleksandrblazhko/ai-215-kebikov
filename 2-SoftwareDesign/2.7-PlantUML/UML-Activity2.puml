@@ -1,0 +1,27 @@
+@startuml
+
+title Activity Diagram for User Create Account
+
+start
+:User provides a desired username and password;
+:Program checks if the username and password meet requirements;
+
+if (Is Username and Password Valid?) then (yes)
+  :Username and password meet the requirements;
+  :Program creates a new user account;
+  if (Account Creation Successful?) then (yes)
+    :User account is created successfully;
+    :User is notified of successful account creation;
+  else (no)
+    :Account creation failed;
+    :Display an error message to the user;
+  endif
+else (no)
+  :Username and password do not meet the requirements;
+  :Display an error message to the user;
+endif
+
+:Finish the account creation process;
+stop
+
+@enduml
